@@ -1,18 +1,18 @@
 # Laundry-Water-Bender
 UAS Pemrograman Lanjut Kelompok 2
 
-Indra Kurniawan
-Elda Vina R.
-Muayyin Wafi Q.
-Muhammad Fahmi Ahsan
+Indra Kurniawan <br>
+Elda Vina R. <br>
+Muayyin Wafi Q. <br>
+Muhammad Fahmi Ahsan <br>
 
-#Website Laundry
+#Website Laundry <br>
 Dikembangkan untuk usaha laundry
 
-#Role
-Admin
-email : admin@role.org
+#Role<br><br>
+Admin<br>
+email : admin@role.org<br>
 password : admin123
-
-User
+<br><br>
+User<br>
 Silahkan buat sendiri hehe
