@@ -21,25 +21,28 @@ use App\Http\Controllers\UserController;
 
 Auth::routes();    
 // })
-Route::get('/create', [App\Http\Controllers\HomeController::class, 'create'])->name('create');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
+    
+Route::get('/create', [App\Http\Controllers\HomeController::class, 'create'])->name('create')->middleware('auth');
 Route::post('/store', [App\Http\Controllers\HomeController::class, 'store'])->name('store');
-// Route::get('/layanan', [App\Http\Controllers\HomeController::class, 'layanan'])->name('layanan');
-// Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/layanan', [App\Http\Controllers\HomeController::class, 'layanan'])->name('layanan');
+Route::get('/about', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 
-Route::get('/', function () {
-    return view('homepage');
-});
+// Route::get('/home', function () {
+//     return view('home');
+// });
 
-Route::get('/layanan', function () {
-    return view('layanan');
-});
+// Route::get('/', function () {
+//     return view('homepage');
+// });
 
-Route::get('/about', function () {
-    return view('about');
-});
+// Route::get('/layanan', function () {
+//     return view('layanan');
+// });
+
+// Route::get('/about', function () {
+//     return view('about');
+// });
 
 Route::resource('order', LaundryController::class)->middleware(['auth','roleAdmin']);
 Route::resource('user', UserController::class);
