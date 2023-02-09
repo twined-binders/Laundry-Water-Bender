@@ -11,7 +11,7 @@ Dikembangkan untuk usaha laundry
 
 #Role<br><br>
 Admin<br>
-email : admin@role.org<br>
+email : admin@gmail.com<br>
 password : admin123
 <br><br>
 User<br>
